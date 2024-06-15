@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Insurance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decentralized Insurance</h1>
+        <button id="connectMetamaskBtn">Connect to MetaMask</button>
+        <div id="policyForm">
+            <h2>Buy Policy</h2>
+            <input type="text" id="policyType" placeholder="Policy Type">
+            <input type="number" id="premiumAmount" placeholder="Premium Amount (ETH)">
+            <button id="buyPolicyBtn">Buy Policy</button>
+        </div>
+        <div id="claimForm">
+            <h2>File Claim</h2>
+            <input type="number" id="claimPolicyId" placeholder="Policy ID">
+            <input type="text" id="claimReason" placeholder="Claim Reason">
+            <button id="fileClaimBtn">File Claim</button>
+        </div>
+        <div id="approveForm">
+            <h2>Approve Claim</h2>
+            <input type="number" id="approveClaimId" placeholder="Claim ID">
+            <button id="approveClaimBtn">Approve Claim</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
