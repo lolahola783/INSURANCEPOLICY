@@ -19,13 +19,13 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: #5a67d8;  /* Soft blue */
+    color: #5a67d8;  
 }
 
 h2 {
     margin-bottom: 15px;
     font-size: 1.5em;
-    color: #4a5568;  /* Darker blue-gray */
+    color: #4a5568;  
 }
 
 button, input {
@@ -34,24 +34,24 @@ button, input {
     margin: 10px auto;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #a0aec0;  /* Light gray */
+    border: 2px solid #a0aec0;  
     border-radius: 5px;
     box-sizing: border-box;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 input {
-    background-color: #edf2f7;  /* Very light gray-blue */
+    background-color: #edf2f7;  
 }
 
 button {
-    background-color: #5a67d8;  /* Soft blue */
+    background-color: #5a67d8;  
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4c51bf;  /* Slightly darker blue */
+    background-color: #4c51bf;  
     border-color: #4c51bf;
 }
 
@@ -59,17 +59,17 @@ button:hover {
     margin-top: 20px;
     text-align: left;
     padding: 10px;
-    background-color: #edf2f7;  /* Very light gray-blue */
-    border: 1px solid #a0aec0;  /* Light gray */
+    background-color: #edf2f7; 
+    border: 1px solid #a0aec0;  
     border-radius: 5px;
 }
 
 #connectMetamaskBtn {
     margin-top: 20px;
-    background-color: #ffd700;  /* Light gold */
+    background-color: #ffd700; 
     border: none;
 }
 
 #connectMetamaskBtn:hover {
-    background-color: #e6c200;  /* Slightly darker gold */
+    background-color: #e6c200;  
 }
