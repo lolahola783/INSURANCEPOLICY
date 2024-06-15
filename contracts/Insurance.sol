@@ -27,6 +27,7 @@ contract Insurance {
     event ClaimFiled(uint indexed id, uint indexed policyId, address indexed claimant, string reason);
     event ClaimApproved(uint indexed id, uint indexed policyId, address indexed claimant);
 
+    // Function to buy policy 
     function buyPolicy(string memory policyType) external payable {
         require(msg.value > 0, "Premium must be greater than zero");
         policyCounter++;
@@ -34,6 +35,7 @@ contract Insurance {
         emit PolicyPurchased(policyCounter, msg.sender, policyType, msg.value);
     }
 
+    // Function to claim policy 
     function fileClaim(uint policyId, string memory reason) external {
         require(policies[policyId].owner == msg.sender, "Only the policy owner can file a claim");
         claimCounter++;
@@ -41,6 +43,7 @@ contract Insurance {
         emit ClaimFiled(claimCounter, policyId, msg.sender, reason);
     }
 
+    // Function to approve policy 
     function approveClaim(uint claimId) external {
         require(claims[claimId].claimant != address(0), "Claim does not exist");
         claims[claimId].isApproved = true;
