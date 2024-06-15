@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (window.ethereum) {
         window.web3 = new Web3(window.ethereum);
   
-        const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';  // Replace with your contract address
+        const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';  // Contract address
         const contractABI = [
           {
             "anonymous": false,
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             "stateMutability": "view",
             "type": "function"
           }
-        ]  // Replace with your contract ABI
+        ]  // Contract ABI
   
         const insuranceContract = new web3.eth.Contract(contractABI, contractAddress);
   
